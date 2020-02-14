@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #1e555c;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  color: white;
+  font-size: 2.4rem;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.title {
+  height: 40%;
+  text-align: center;
+}
+.title h1 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.set-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  width: 25%;
+  color: white;
+  background-color: #24575e;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  margin: 0 10px;
+  color: white;
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #14363a;
+}
+.form-button {
+  padding: 10px;
+  width: 80%;
+  border: none;
+  border-radius: 90px;
+  cursor: pointer;
+  color: lightgray;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid #14363a;
+}
+.timers {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.session {
+  margin: 30px auto;
+  padding-bottom: 20px;
+  width: 35%;
+  border: 11px solid #14363a;
+  border-radius: 60px;
+}
+.session .session-heading {
+  padding-top: 10px;
+}
+.five-min {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 15%;
+  border: 7px solid #14363a;
+  border-radius: 90px;
+}
+.one-hour {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 15%;
+  border: 7px solid #14363a;
+  border-radius: 90px;
+}
+#end-time {
+  font-size: 1.7rem;
+  color: lightgray;
+}
+.timer-button {
+  padding: 20px 0;
+  width: 90%;
+  border: none;
+  border-radius: 90px;
+  cursor: pointer;
+  color: lightgray;
+  font-size: 1.7rem;
+  font-weight: bold;
+  background-color: transparent;
+}
+.play {
+  margin: 15px auto;
+}
+#play-button {
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+#pause-button {
+  cursor: pointer;
+}

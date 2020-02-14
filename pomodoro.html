@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/cf7a989d9c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Pomodoro Clock</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Pomodoro Clock</h1>
+        <h3>Session Length</h3>
+      </div>
+      <div class="set-time">
+        <!-- <form name="customForm">
+          <input type="text" name="minutes" placeholder="Enter Minutes" />
+        </form> -->
+        <form name="customForm">
+          <input type="number" name="hours" value="0" min="0" placeholder="h" />
+          <input
+            type="number"
+            name="minutes"
+            value="0"
+            min="0"
+            placeholder="m"
+          />
+          <input
+            type="number"
+            name="seconds"
+            value="0"
+            min="0"
+            placeholder="s"
+          />
+          <button class="form-button" type="submit" onclick="this.blur()">
+            START
+          </button>
+        </form>
+      </div>
+      <div class="timers">
+        <div class="five-min">
+          <button data-time="300" class="timer-button" onclick="this.blur()">
+            5 Minutes
+          </button>
+        </div>
+        <div class="session">
+          <h3 class="session-heading">Session</h3>
+          <h3 class="display-time">
+            <span class="hour">00</span>:<span class="min">00</span>:<span
+              class="sec"
+              >00</span
+            >
+          </h3>
+          <h3 id="end-time"></h3>
+        </div>
+        <div class="one-hour">
+          <button data-time="3600" class="timer-button" onclick="this.blur()">
+            1 Hour
+          </button>
+        </div>
+      </div>
+      <div class="play">
+        <i id="play-button" class="fas fa-play "></i>
+        <i id="pause-button" class="fas fa-pause"></i>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
